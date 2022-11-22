@@ -1,0 +1,144 @@
+.contact-form {
+  order:1;
+  width: 420px;
+  margin-top: 20px;
+h1{
+  display: flex;
+
+}
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      margin-bottom: 10px;
+      opacity: 0;
+      overflow: hidden;
+      display: block;
+      clear: both;
+      position: relative;
+      animation: fadeInUp 2s 2s;
+      animation-fill-mode: forwards;
+    }
+
+    li.half {
+      width: 49%;
+      margin-left: 2%;
+      float: left;
+      clear: none;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  input[type='text'],
+  input[type='email'] {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 100%;
+    border: 0;
+    background: #115173;
+    height: 50px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 150px;
+  }
+
+  .flat-button {
+    width: 100%;
+    color: #ffd700;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #ffd700;
+    border-radius: 4px;
+    background: 0 0;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+      font-weight: 700;
+      color: #115173;
+      background: #ffd700;
+    }
+  }
+}
+
+.info-map {
+  order: 2;
+  position: absolute;
+  top: 150px;
+  right: 5%;
+  z-index: 999999;
+  width: 600px;
+  padding: 20px;
+  border-radius: 5px ;
+  opacity: 0;
+  animation: fadeIn 4s 1.5s forwards;
+  animation-fill-mode: forwards;
+
+  span {
+    font-size: 16px;
+
+    span {
+      color: #ffd700;
+    }
+  }
+}
+@media (max-width: 768px) {
+
+.contact-page{
+  display: block;
+  .text-zone{
+    width: 100%;
+  }
+ .info-map {
+
+   position: absolute;
+   
+   right:-12%;
+   z-index: 999999;
+   width: 600px;
+   padding: 60px 0;
+   border-radius: 5px;
+   opacity: 0;
+   animation: fadeIn 4s 1.5s forwards;
+   animation-fill-mode: forwards;
+
+   span {
+     font-size: 16px;
+
+     span {
+       color: #ffd700;
+     }
+   }
+ }
+} 
+.contact-form{
+  position: absolute;
+  order: 1;
+  top: 450px;
+  bottom:50px ;
+  margin-bottom: -50px;
+}
+.info-map{
+  order: 2;
+}
+}
